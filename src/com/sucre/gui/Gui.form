@@ -117,7 +117,7 @@
           </component>
         </children>
       </scrollpane>
-      <component id="19832" class="javax.swing.JButton" binding="暂停Button" default-binding="true">
+      <component id="19832" class="javax.swing.JButton" binding="resume">
         <constraints>
           <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="73" height="36"/>
@@ -127,7 +127,7 @@
           <text value="暂停"/>
         </properties>
       </component>
-      <component id="1950a" class="javax.swing.JButton" binding="开始Button" default-binding="true">
+      <component id="1950a" class="javax.swing.JButton" binding="start">
         <constraints>
           <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="73" height="30"/>
@@ -180,7 +180,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="ebcfa" class="javax.swing.JTable" binding="cookietable" custom-create="true">
+          <component id="ebcfa" class="javax.swing.JTable" binding="cookietable">
             <constraints/>
             <properties/>
           </component>

@@ -13,8 +13,8 @@ import javax.swing.*;
 public class Controller {
 
 	public static Controller controller = new Controller();
-	private BaiduImpl BaiduImplId;
-	private BaiduImpl BaiduImplCookie;
+	private BaiduImpl ImplId;
+	private BaiduImpl ImplCookie;
 	private VidImpl vidImpl;
 	private boolean stop = false;
 
@@ -43,11 +43,11 @@ public class Controller {
 	 * 
 	 * @param fileName
 	 */
-	public void loadWeiboId(String fileName, JTable table, String mission) {
-		BaiduImplId = new BaiduImpl();
-		BaiduImplId.loadList(fileName);
+	public void loadId(String fileName, JTable table, String mission) {
+		ImplId = new BaiduImpl();
+		ImplId.loadList(fileName);
 		// BaiduImplId.getCounts(Integer.parseInt(fileName), mission);
-		GuiUtil.loadTableVid(table, (MutiList) BaiduImplId.getlist());
+		GuiUtil.loadTableVid(table, (MutiList) ImplId.getlist());
 	}
 
 	/**
@@ -55,15 +55,15 @@ public class Controller {
 	 * 
 	 * @param fileName
 	 */
-	public void loadWeiboCookie(String fileName, JTable table) {
-		BaiduImplCookie = new BaiduImpl();
-		BaiduImplCookie.loadList(fileName);
-		GuiUtil.loadTableVid(table, (MutiList) BaiduImplCookie.getlist());
+	public void loadCookie(String fileName, JTable table) {
+		ImplCookie = new BaiduImpl();
+		ImplCookie.loadList(fileName);
+		GuiUtil.loadTableVid(table, (MutiList) ImplCookie.getlist());
 	}
 
 	/**
 	 * 加载指定文件到vid列表
-	 * 
+	 *
 	 * @param fileName
 	 * @return
 	 */
@@ -107,11 +107,15 @@ public class Controller {
 		GuiUtil.loadTable(table, list);
 	}
 
+	/**
+	 * 给service层调用，登录出来的cookie要显示出来。
+	 * @param baidu
+	 */
 	public void addCookie(Baidu baidu) {
-		if (BaiduImplCookie == null) {
-			BaiduImplCookie = new BaiduImpl();
+		if (ImplCookie == null) {
+			ImplCookie = new BaiduImpl();
 		}
-		BaiduImplCookie.add(baidu);
+		ImplCookie.add(baidu);
 	}
 
 	/**
@@ -137,7 +141,7 @@ public class Controller {
 	 * @param mission  任务名称
 	 */
 	public void vote(int start, int thread, boolean isCircle, String mission) {
-		int limit = BaiduImplCookie == null ? 0 : BaiduImplCookie.getsize();
+		int limit = ImplCookie == null ? 0 : ImplCookie.getsize();
 		if (limit == 0 || getVidImpl() == null) {
 			MyUtil.print("Cookie或者vid未导入！", Factor.getGui());
 			return;
@@ -198,10 +202,10 @@ public class Controller {
 	 * @param cookietable
 	 */
 	public void refresh(JTable table) {
-		if (BaiduImplCookie == null) {
+		if (ImplCookie == null) {
 			return;
 		}
-		GuiUtil.loadTableVid(table, (MutiList) BaiduImplCookie.getlist());
+		GuiUtil.loadTableVid(table, (MutiList) ImplCookie.getlist());
 	}
 
 	/**
@@ -236,6 +240,10 @@ public class Controller {
 		return this.stop;
 	}
 
+	/**
+	 * 取结束位置
+	 * @return
+	 */
 	public int getEndCount() {
 		return Factor.getGuiFrame().getCounts();
 	}

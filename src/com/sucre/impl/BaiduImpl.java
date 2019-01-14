@@ -2,16 +2,29 @@ package com.sucre.impl;
 
 import com.sucre.dao.BaiduDao;
 import com.sucre.entity.Baidu;
+import com.sucre.factor.Factor;
 import com.sucre.listUtil.MutiList;
+import com.sucre.utils.MyUtil;
 
 import java.util.List;
 
 public class BaiduImpl implements BaiduDao {
-    //public static weiboDao dao=new WeiboImpl();
+   //用来装载账号列表数据
     private MutiList list=new MutiList();
+
+    /**
+     * 导入指定文件到id列表，可通用。
+     * @param fileName
+     */
     @Override
     public void loadList(String fileName) {
-
+        try {
+            // 加载文件
+            list.loadFromFile(fileName);
+            MyUtil.print("导入成功<==>" + String.valueOf(list.getSize()), Factor.getGui());
+        } catch (Exception e) {
+            MyUtil.print("导入错误：" + e.getMessage(), Factor.getGui());
+        }
     }
 
     @Override
