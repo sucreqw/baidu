@@ -13,17 +13,17 @@
     </properties>
     <border type="none"/>
     <children>
-      <component id="62f4b" class="javax.swing.JButton" binding="导入Button" default-binding="true">
+      <component id="62f4b" class="javax.swing.JButton" binding="loadid">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="78" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <text value="导入"/>
+          <text value="导入ID"/>
         </properties>
       </component>
-      <component id="ae560" class="javax.swing.JButton" binding="导入cookieButton" default-binding="true">
+      <component id="ae560" class="javax.swing.JButton" binding="loadcookie">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -31,7 +31,7 @@
           <text value="导入cookie"/>
         </properties>
       </component>
-      <component id="c55d4" class="javax.swing.JButton" binding="导入vidButton" default-binding="true">
+      <component id="c55d4" class="javax.swing.JButton" binding="loadvid">
         <constraints>
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -39,7 +39,7 @@
           <text value="导入vid"/>
         </properties>
       </component>
-      <component id="767f1" class="javax.swing.JButton" binding="加入vidButton" default-binding="true">
+      <component id="767f1" class="javax.swing.JButton" binding="addvid">
         <constraints>
           <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -147,40 +147,40 @@
           <text value="id.txt"/>
         </properties>
       </component>
-      <scrollpane id="240ec">
+      <scrollpane id="240ec" binding="idscroll">
         <constraints>
           <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
         <border type="none"/>
         <children>
-          <component id="2a45b" class="javax.swing.JTable" binding="table1" default-binding="true">
+          <component id="2a45b" class="javax.swing.JTable" binding="idtable">
             <constraints/>
             <properties/>
           </component>
         </children>
       </scrollpane>
-      <scrollpane id="c0e8d">
+      <scrollpane id="c0e8d" binding="vidscroll">
         <constraints>
           <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
         <border type="none"/>
         <children>
-          <component id="36960" class="javax.swing.JTable" binding="table2" default-binding="true">
+          <component id="36960" class="javax.swing.JTable" binding="vidtable">
             <constraints/>
             <properties/>
           </component>
         </children>
       </scrollpane>
-      <scrollpane id="cae48">
+      <scrollpane id="cae48" binding="cookiescroll">
         <constraints>
           <grid row="5" column="4" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
         <border type="none"/>
         <children>
-          <component id="ebcfa" class="javax.swing.JTable" binding="table3" default-binding="true">
+          <component id="ebcfa" class="javax.swing.JTable" binding="cookietable" custom-create="true">
             <constraints/>
             <properties/>
           </component>

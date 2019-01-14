@@ -1,8 +1,11 @@
 package com.sucre.gui;
 
+import com.sucre.controller.Controller;
 import com.sucre.utils.Printer;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Gui  implements Printer {
     private JButton 开始Button;
@@ -10,24 +13,33 @@ public class Gui  implements Printer {
     private JTextField IPcount;
     private JTextField filename;
     private JButton 暂停Button;
-    private JButton 导入Button;
-    private JButton 导入cookieButton;
-    private JButton 导入vidButton;
-    private JButton 加入vidButton;
+    private JButton loadid;
+    private JButton loadcookie;
+    private JButton loadvid;
+    private JButton addvid;
     private JTextField startCount;
     private JTextField endCount;
     private JTextField threadNum;
     private JTextArea feedback;
     private JPanel baidu;
     private JButton about;
-    private JTable table1;
-    private JTable table2;
-    private JTable table3;
+    private JTable idtable;
+    private JTable vidtable;
+    private JTable cookietable;
+    private JScrollPane idscroll;
+    private JScrollPane vidscroll;
+    private JScrollPane cookiescroll;
 
     private static Gui gui =  new Gui();
 
     private Gui() {
 
+        loadid.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
     }
 
 
@@ -48,5 +60,23 @@ public class Gui  implements Printer {
     public void print(String data) {
         feedback.setText(data);
         feedback.setText(feedback.getText() + data + "\r\n");
+    }
+
+    /**
+     * 取换ip的数量。
+     * @return
+     */
+    public int getIPcount() {
+        return Integer.parseInt(IPcount.getText());
+    }
+    /**
+     * 刷新列表数据。
+     */
+    public void refresh() {
+        Controller.getInstance().refresh(cookietable);
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
     }
 }
