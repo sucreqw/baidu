@@ -1,13 +1,13 @@
 package com.sucre.gui;
 
-import com.sucre.controller.Controller;
+import com.sucre.controller.BaiduController;
 import com.sucre.utils.Printer;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Gui  implements Printer {
+public class Gui implements Printer {
     private JButton start;
     private JComboBox mission;
     private JTextField IPcount;
@@ -30,11 +30,11 @@ public class Gui  implements Printer {
     private JScrollPane vidscroll;
     private JScrollPane cookiescroll;
 
-    private static Gui gui =  new Gui();
+    private static Gui gui = new Gui();
 
     private Gui() {
         //设置mission选项的内容
-        mission.setModel(new DefaultComboBoxModel(new String[] {"注册"}));
+        mission.setModel(new DefaultComboBoxModel(new String[]{"注册"}));
 
         /**
          * 加载id
@@ -42,7 +42,7 @@ public class Gui  implements Printer {
         loadid.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-              Controller.getInstance().loadId(filename.getText(),idtable,"loadid");
+                BaiduController.getInstance().loadId(filename.getText(), idtable, "loadid");
             }
         });
         /**
@@ -51,7 +51,7 @@ public class Gui  implements Printer {
         loadvid.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-              Controller.getInstance().loadVid(filename.getText(),vidtable);
+                BaiduController.getInstance().loadVid(filename.getText(), vidtable);
             }
         });
         /**
@@ -60,7 +60,7 @@ public class Gui  implements Printer {
         addvid.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Controller.getInstance().addVid(filename.getText(),vidtable);
+                BaiduController.getInstance().addVid(filename.getText(), vidtable);
             }
         });
         /**
@@ -69,7 +69,7 @@ public class Gui  implements Printer {
         loadcookie.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Controller.getInstance().loadCookie(filename.getText(),cookietable);
+                BaiduController.getInstance().loadCookie(filename.getText(), cookietable);
             }
         });
 
@@ -79,7 +79,10 @@ public class Gui  implements Printer {
         start.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                String m = (String) mission.getSelectedItem();
+                int startcount = Integer.parseInt(startCount.getText());
+                int threadnum = Integer.parseInt(threadNum.getText());
+                BaiduController.getInstance().doMission(startcount, threadnum, false, m);
             }
         });
         /**
@@ -90,9 +93,9 @@ public class Gui  implements Printer {
             public void actionPerformed(ActionEvent e) {
                 if ("暂停".equals(resume.getText())) {
                     resume.setText("继续");
-                    Controller.getInstance().stop();
+                    BaiduController.getInstance().stop();
                 } else {
-                    Controller.getInstance().resume();
+                    BaiduController.getInstance().resume();
                     resume.setText("暂停");
 
                 }
@@ -118,35 +121,40 @@ public class Gui  implements Printer {
 
     /**
      * 实现打印的方法，让其它线程直接调用，显示返回结果。
+     *
      * @param data
      */
     @Override
     public void print(String data) {
-       // feedback.setText(data);
+        // feedback.setText(data);
         feedback.setText(feedback.getText() + data + "\r\n");
     }
 
     /**
      * 取换ip的数量。
+     *
      * @return
      */
     public int getIPcount() {
         return Integer.parseInt(IPcount.getText());
     }
+
     /**
      * 刷新列表数据。
      */
     public void refresh() {
-        Controller.getInstance().refresh(cookietable);
+        BaiduController.getInstance().refresh(cookietable);
     }
 
     /**
      * 取结束位置
+     *
      * @return
      */
     public int getCounts() {
         return Integer.parseInt(endCount.getText());
     }
+
     private void createUIComponents() {
         // TODO: place custom component creation code here
     }

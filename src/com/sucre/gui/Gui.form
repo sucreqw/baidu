@@ -53,7 +53,9 @@
             <preferred-size width="55" height="27"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="1"/>
+        </properties>
       </component>
       <component id="2b1c2" class="javax.swing.JTextField" binding="IPcount">
         <constraints>
@@ -61,7 +63,9 @@
             <preferred-size width="55" height="27"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="0"/>
+        </properties>
       </component>
       <component id="82ab1" class="javax.swing.JTextField" binding="threadNum">
         <constraints>
@@ -69,7 +73,9 @@
             <preferred-size width="134" height="27"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="1"/>
+        </properties>
       </component>
       <component id="d56e2" class="javax.swing.JComboBox" binding="mission">
         <constraints>
@@ -202,7 +208,9 @@
             <preferred-size width="55" height="27"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value="0"/>
+        </properties>
       </component>
       <component id="2a995" class="javax.swing.JButton" binding="about">
         <constraints>

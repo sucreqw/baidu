@@ -130,7 +130,23 @@ public class Controller {
 	}
 
 
+	/**
+	 * 开始任务，全部集合到一个方法里面。
+	 */
+	public void doMission(int start, int thread, boolean isCircle, String mission){
 
+		switch (mission){
+
+			case "注册" :
+				MyUtil.print("注册任务开始！", Factor.getGui());
+				break;
+
+			default:
+
+
+		}
+
+	}
 
 	/**
 	 * 投票类
