@@ -1,6 +1,7 @@
 package com.sucre.gui;
 
-import com.sucre.controller.BaiduController;
+
+import com.sucre.controller.Controller;
 import com.sucre.utils.Printer;
 
 import javax.swing.*;
@@ -42,7 +43,7 @@ public class Gui implements Printer {
         loadid.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                BaiduController.getInstance().loadId(filename.getText(), idtable, "loadid");
+                Controller.getInstance().loadId(filename.getText(), idtable, "loadid");
             }
         });
         /**
@@ -51,7 +52,7 @@ public class Gui implements Printer {
         loadvid.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                BaiduController.getInstance().loadVid(filename.getText(), vidtable);
+                Controller.getInstance().loadVid(filename.getText(), vidtable);
             }
         });
         /**
@@ -60,7 +61,7 @@ public class Gui implements Printer {
         addvid.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                BaiduController.getInstance().addVid(filename.getText(), vidtable);
+                Controller.getInstance().addVid(filename.getText(), vidtable);
             }
         });
         /**
@@ -69,7 +70,7 @@ public class Gui implements Printer {
         loadcookie.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                BaiduController.getInstance().loadCookie(filename.getText(), cookietable);
+                Controller.getInstance().loadCookie(filename.getText(), cookietable);
             }
         });
 
@@ -82,7 +83,7 @@ public class Gui implements Printer {
                 String m = (String) mission.getSelectedItem();
                 int startcount = Integer.parseInt(startCount.getText());
                 int threadnum = Integer.parseInt(threadNum.getText());
-                BaiduController.getInstance().doMission(startcount, threadnum, false, m);
+                Controller.getInstance().doMission(startcount, threadnum, false, m);
             }
         });
         /**
@@ -93,12 +94,21 @@ public class Gui implements Printer {
             public void actionPerformed(ActionEvent e) {
                 if ("暂停".equals(resume.getText())) {
                     resume.setText("继续");
-                    BaiduController.getInstance().stop();
+                    Controller.getInstance().stop();
                 } else {
-                    BaiduController.getInstance().resume();
+                    Controller.getInstance().resume();
                     resume.setText("暂停");
 
                 }
+            }
+        });
+        /**
+         * 关于窗体。
+         */
+        about.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                About.main(null);
             }
         });
     }
@@ -143,7 +153,7 @@ public class Gui implements Printer {
      * 刷新列表数据。
      */
     public void refresh() {
-        BaiduController.getInstance().refresh(cookietable);
+        Controller.getInstance().refresh(cookietable);
     }
 
     /**

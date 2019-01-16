@@ -92,8 +92,21 @@ public class CommonEntity<T> {
                 this.s = temp.length >= 5 ? temp[4]:"";
             }
         } catch (Exception e) {
-            MyUtil.print("导入weibo数据出错!", Factor.getGui());
+            MyUtil.print("导入对象数据出错!", Factor.getGui());
         }
+    }
+
+    //tostring,打印对象信息，供子类调用。
+    @Override
+    public String toString() {
+        return "CommonEntity{" +
+                "id='" + id + '\'' +
+                ", pass='" + pass + '\'' +
+                ", uid='" + uid + '\'' +
+                ", cookie='" + cookie + '\'' +
+                ", s='" + s + '\'' +
+                ", name='" + name + '\'' +
+                '}';
     }
 
 }

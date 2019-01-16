@@ -38,6 +38,7 @@ abstract public class Thread4Net implements Runnable {
 			lock.lock();
 			int i=getIndex();
 			lock.unlock();
+			//返回备用参数，以防止有业务需求。
 			int p = doWork(i);
 			
 			//延时操作
@@ -63,8 +64,11 @@ abstract public class Thread4Net implements Runnable {
 		
 		return i;
 	}
-    
-    public void exitWork() {
+
+	/**
+	 * 主动调用父线程停止工作。
+	 */
+	public void exitWork() {
     	isWork=false;
     }
 }

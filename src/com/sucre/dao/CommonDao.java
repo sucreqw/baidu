@@ -30,5 +30,10 @@ public interface CommonDao {
     public <T> CommonEntity<T> add(CommonEntity<T> entity);
 
     //更新一条数据
-    public <T> CommonEntity<T> update(CommonEntity<T>entity);
+    public <T> CommonEntity<T> update(CommonEntity<T> entity);
+
+    //返回对象的数据列表。
+    public List getlist();
 }
+
+

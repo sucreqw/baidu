@@ -8,7 +8,7 @@ import com.sucre.utils.MyUtil;
 
 import java.util.List;
 
-public class TestImpl implements CommonDao {
+public class CommonImpl implements CommonDao {
     //用来装载账号列表数据
     private MutiList list = new MutiList();
 
@@ -65,7 +65,7 @@ public class TestImpl implements CommonDao {
 
     @Override
     public int getsize() {
-        return 0;
+        return list.getSize();
     }
 
     @Override
@@ -76,5 +76,10 @@ public class TestImpl implements CommonDao {
     @Override
     public <T> CommonEntity<T> update(CommonEntity<T> entity) {
         return null;
+    }
+
+    @Override
+    public  List getlist() {
+        return this.list;
     }
 }

@@ -7,6 +7,4 @@ public interface Info {
 	String getADSL();
 	String getADSLname();
 	String getADSLpass();
-	
-	
 }

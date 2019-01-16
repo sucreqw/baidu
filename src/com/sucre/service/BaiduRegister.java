@@ -1,22 +1,25 @@
 package com.sucre.service;
 
+import com.sucre.factor.Factor;
 import com.sucre.myThread.Thread4Net;
+import com.sucre.utils.MyUtil;
 
 public class BaiduRegister extends Thread4Net {
-
-    public BaiduRegister(int l, int u, boolean isCircle) {
+    private String mission;
+    public BaiduRegister(int l, int u, boolean isCircle,String mission) {
         super(l, u, isCircle);
+        this.mission=mission;
     }
 
     /**
      * 具体的业务逻辑实现。
-     * @param index
+     * @param index 备用参数，以防止有业务需求
      * @return
      */
     @Override
     public int doWork(int index) {
-
-        return 0;
+        MyUtil.print("it's a test:" + Thread.currentThread().getName() +"<==>"+ index, Factor.getGui());
+        return 1;
     }
 
     private byte[] getdata(String cookies, String uid) {
