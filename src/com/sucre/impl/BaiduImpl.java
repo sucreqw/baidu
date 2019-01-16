@@ -1,6 +1,7 @@
 package com.sucre.impl;
 
 import com.sucre.dao.BaiduDao;
+import com.sucre.dao.CommonDao;
 import com.sucre.entity.Baidu;
 import com.sucre.factor.Factor;
 import com.sucre.listUtil.MutiList;

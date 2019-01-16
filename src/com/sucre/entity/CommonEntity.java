@@ -4,9 +4,10 @@ import com.sucre.factor.Factor;
 import com.sucre.utils.MyUtil;
 
 /**
- * pojo类
+ * 泛型通用类，其它平台继承直接它的方法，无须重写。
+ * @param <T>
  */
-public class Baidu {
+public class CommonEntity<T> {
     private String id;
     private String pass;
     private String uid;
@@ -61,13 +62,16 @@ public class Baidu {
     public void setName(String name) {
         this.name = name;
     }
-    public Baidu(String id, String pass) {
+    //空构造器
+    public CommonEntity(){super();}
+    //只有id跟密码时直接构造对象返回。
+    public CommonEntity (String id, String pass) {
         this.id = id;
         this.pass = pass;
     }
 
     // 从文件数据里加载数据！
-    public Baidu(String inputdata) {
+    public CommonEntity (String inputdata) {
         load(inputdata);
     }
     public void load(String inputdata){
@@ -91,15 +95,5 @@ public class Baidu {
             MyUtil.print("导入weibo数据出错!", Factor.getGui());
         }
     }
-    @Override
-    public String toString() {
-        return "Baidu{" +
-                "id='" + id + '\'' +
-                ", pass='" + pass + '\'' +
-                ", uid='" + uid + '\'' +
-                ", cookie='" + cookie + '\'' +
-                ", s='" + s + '\'' +
-                ", name='" + name + '\'' +
-                '}';
-    }
+
 }
