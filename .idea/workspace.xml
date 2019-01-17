@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c0703-6598-4391-b840-2b40f31f368b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/sucre/gui/About.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sucre/gui/About.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/id.txt" beforeDir="false" afterPath="$PROJECT_DIR$/id.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/controller/BaiduController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/controller/BaiduController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/controller/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/controller/Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/entity/Baidu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/entity/Baidu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/gui/Gui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/impl/BaiduImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/impl/BaiduImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/myThread/Thread4Net.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/myThread/Thread4Net.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/service/BaiduRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/service/BaiduRegister.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/dao/CommonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/dao/CommonDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/entity/Baidu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/entity/Baidu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/entity/CommonEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/entity/CommonEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/gui/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/gui/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/impl/TestImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/impl/CommonImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/myThread/Thread4Net.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/myThread/Thread4Net.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/utils/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/utils/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,24 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sucre/gui/Gui.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="122" column="41" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3348#3349#0" expanded="true" />
-                <element signature="e#3393#3394#0" expanded="true" />
-                <element signature="e#3779#3780#0" expanded="true" />
-                <element signature="e#4152#4153#0" expanded="true" />
-                <element signature="e#4273#4274#0" expanded="true" />
-                <element signature="e#4413#4414#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sucre/myThread/Thread4Net.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -128,14 +84,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+            <state relative-caret-position="240">
+              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="170" column="21" selection-start-line="170" selection-start-column="21" selection-end-line="170" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -211,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/com/sucre/utils/Info.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/myThread/Thread4Net.java" />
+        <option value="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" />
       </list>
     </option>
   </component>
@@ -350,7 +316,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="249" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547608773786" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547684645805" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -414,13 +380,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23182000" />
+    <option name="totallyTimeSpent" value="23733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="7" y="23" width="1890" height="979" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23755412" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23755412" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -430,7 +396,7 @@
       <window_info anchor="bottom" id="Duplicate detector" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32919955" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.35174745" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.35174745" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39797068" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -484,9 +450,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/utils/JsUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/dao/weiboDao.java" />
@@ -765,11 +728,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="240">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="170" column="21" selection-start-line="170" selection-start-column="21" selection-end-line="170" selection-end-column="21" />
         </state>
       </provider>
     </entry>
