@@ -146,7 +146,10 @@ public class Nets {
 				// 由于socket会阻�?,当装不满缓冲区时,当作是结�?,
 				start = serachB(rev, new byte[] { 13, 10, 13, 10 });
 				start=start==-1?0:start+4;
-				output.write(rev, start, len-start);
+				//清除脏数据（数据里的换行符用标准）
+				int[] clear=clearByte(rev, start, len);
+				//返回的数组，第一个是起启，第二个是结束。
+				output.write(rev, clear[0], clear[1]-clear[0]);
 				
 				/*if (len < 1024) {
 					break;
@@ -191,6 +194,57 @@ public class Nets {
 				}
 			}
 		}
+		return ret;
+	}
+
+	/**
+	 * 去除脏数据用，有些网站返回的byte里会有一些自己的规则，或者socket里也会有一些长度数据，要做清理
+	 * @param source 原始byte
+	 * @param start 起始位置
+	 * @param end 结束位置
+	 * @return
+	 */
+	private int[] clearByte(byte[] source, int start,int end){
+		int[] ret={-1,-1};
+		//真正需要的长度。
+		int length=end-start;
+		//从中间开始，"两边发散查找换行符"。最后还是要往后第一个，因为有些图片数据里在确会有换行，以后遇到新网站可能还要再改。
+		int halfStart=length/2+ start;
+		//用来接收查找的结果，开始部分
+		int retStart=-1;
+		//用来接收查找的结果，结束部分
+		int retEnd=-1;
+		//前面循环查看是否存在换行符
+		for(int i=start;i<=halfStart; i++){
+			//找到换行符
+			if(source[i]==13 && source[i+1]==10){
+               retStart=i+2;
+               break;
+		    }
+		}
+		//往后循环查看是否存在换行符
+		for(int i=halfStart;i<end; i++){
+			//找到换行符
+			if(source[i]==13 && source[i+1]==10){
+				retEnd=i;
+				break;
+			}
+		}
+        //判断找到的换行符是否是有效的数据。
+		//如果搜索到的换行符 位置不比起启位置大的话，说明无效。直接用起启位置。
+		if(!(retStart>start)){
+			ret[0]=start;
+		}else{
+			ret[0]=retStart;
+		}
+		//判断找到的换行符是否是有效的数据。
+		//如果往后搜索不到 换行符，就直接以byte的长度作为结束，如果搜索到了就是最近的换行符了，直接采用。
+		if(retEnd==-1){
+			ret[1]=end;
+		}else{
+			ret[1]=retEnd;
+		}
+
 		return ret;
 	}
 }

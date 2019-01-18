@@ -2,17 +2,21 @@ package com.sucre.gui;
 
 
 import com.sucre.controller.Controller;
+import com.sucre.utils.MyUtil;
 import com.sucre.utils.Printer;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class Gui implements Printer {
     private JButton start;
     private JComboBox mission;
     private JTextField IPcount;
-    private JTextField filename;
+    public JTextField filename;
     private JButton resume;
     private JButton loadid;
     private JButton loadcookie;
@@ -30,6 +34,9 @@ public class Gui implements Printer {
     private JScrollPane idscroll;
     private JScrollPane vidscroll;
     private JScrollPane cookiescroll;
+    private JLabel image;
+    //存放验证码输入状态，等待service线程来取，1表示换一张，2表示输入完毕。
+    private int status;
 
     private static Gui gui = new Gui();
 
@@ -109,6 +116,32 @@ public class Gui implements Printer {
             @Override
             public void actionPerformed(ActionEvent e) {
                 About.main(null);
+
+            }
+        });
+        //文本框按钮点击事件。
+        filename.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyReleased(KeyEvent e) {
+                //super.keyTyped(e);
+                //filename.setText(String.valueOf(e.getExtendedKeyCode()));
+                int event=e.getExtendedKeyCode();
+                switch (event){
+
+                    case 10:
+                        //表示输入完毕
+                        status=2;
+                        break;
+
+                    case 192:
+                        //表示换一张
+                        status=1;
+                        filename.setText("");
+                        break;
+                     default:
+                         //filename.setText(String.valueOf(event));
+                         break;
+                }
             }
         });
     }
@@ -165,7 +198,32 @@ public class Gui implements Printer {
         return Integer.parseInt(endCount.getText());
     }
 
+    /**
+     * 把验证码显示到窗体上。
+     * @param pic 图片的byte
+     */
+    public void showPic(byte [] pic){
+        //使用字节数组，实例化ImageIcon对象
+        Icon icon = new ImageIcon(pic);
+        //建立画布对象。
+        Graphics g =image.getGraphics() ;
+        //把照片流画到画布G上，imageIcon.getImage：取到图片对象，x,y为图像要显示 在窗体上的位置，whidth,height为图片的宽和高，最后是窗体的panel
+        g.drawImage(((ImageIcon) icon).getImage(), 5, 5,icon.getIconWidth(), icon.getIconHeight(), baidu) ;
+        //画到lable上
+        image.paint(g) ;
+    }
+
+
+    /**
+     * //存放验证码输入状态，等待service线程来取
+     * @return 1表示换一张，2表示输入完毕。
+     */
+    public int getStatus(){
+       return status;
+    }
     private void createUIComponents() {
         // TODO: place custom component creation code here
     }
+
+
 }

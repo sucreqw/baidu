@@ -151,6 +151,7 @@ public class Controller {
                 }
                 break;
 
+
             default:
 
 
@@ -215,6 +216,13 @@ public class Controller {
         thread.start();
     }
 
+    /**
+     * 把验证码显示到窗体！
+     * @param pic 图片的byte
+     */
+    public void showPic(byte[] pic){
+        Factor.getGuiFrame().showPic(pic);
+    }
 
     /**
      * 拿到controller的对象实例。

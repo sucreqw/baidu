@@ -18,7 +18,7 @@
           <component id="1a7e2" class="javax.swing.JTextArea" binding="aboutTxt">
             <constraints/>
             <properties>
-              <text value="版本0.0&#10;基本union架构的baidu版本，更新了controller,dao,impl层的代码，采用更多的泛型&#10;以实现更通用的功能，减少代码的重复性。"/>
+              <text value="版本0.0&#10;基本union架构的baidu版本，更新了controller,dao,impl层的代码，采用更多的泛型&#10;以实现更通用的功能，减少代码的重复性。&#10;GUI增加了显示验证码功能。&#10;net模块增加了clear算法，用来清除服务器返回验证码流里的脏数据（byte）."/>
             </properties>
           </component>
         </children>
