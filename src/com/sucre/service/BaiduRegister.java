@@ -8,6 +8,7 @@ import com.sucre.utils.MyUtil;
 import com.sucre.utils.RsaUtils;
 
 import java.net.URLEncoder;
+import java.util.Base64;
 
 public class BaiduRegister extends Thread4Net {
     private String mission;
@@ -48,8 +49,9 @@ public class BaiduRegister extends Thread4Net {
                     key=MyUtil.midWord("\"key\":'","',",ret);
                     RsaKey=MyUtil.midWord("BEGIN PUBLIC KEY-----\\n","\\n-----END PUBLIC KEY",  ret);
                     RsaKey=RsaKey.replace("\\n","");
-                    RsaKey=RsaKey.replace("\\","");
-
+                    RsaKey=RsaKey.replace("\\/","/");
+                    RsaKey=RsaUtils.bytesToHexString(Base64.getDecoder().decode(RsaKey));
+                    RsaKey=RsaKey.replace("010001","");
                 }
 
                 //第一步先取到图片的hash
@@ -92,7 +94,7 @@ public class BaiduRegister extends Thread4Net {
                             ret = net.goPost("passport.baidu.com", 443, sendSMS(phone, verifySign, URLEncoder.encode(code), verifyStr,cookie,token));
                             if(!MyUtil.isEmpty(ret)){
                                 String retNO=MyUtil.midWord("no\": \"","\"",ret);
-                                if("0".equals(retNO)){
+                               // if("0".equals(retNO)){
                                     MyUtil.print("验证码发送成功，请接收后输入并回车！",Factor.getGui());
                                     String pass="wqwqwqwq";
                                     String nick;
@@ -104,9 +106,9 @@ public class BaiduRegister extends Thread4Net {
                                        System.out.println(ret);
                                    }
 
-                                }else{
-                                    MyUtil.print("验证码发送失败，错误码："+ retNO,Factor.getGui());
-                                }
+                               // }else{
+                                //    MyUtil.print("验证码发送失败，错误码："+ retNO,Factor.getGui());
+                               // }
                             }
 
 

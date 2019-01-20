@@ -1,5 +1,6 @@
 package com.sucre.utils;
 
+import javax.crypto.Cipher;
 import java.math.BigInteger;
 import java.security.KeyFactory;
 import java.security.PrivateKey;
@@ -7,8 +8,6 @@ import java.security.PublicKey;
 import java.security.spec.RSAPrivateKeySpec;
 import java.security.spec.RSAPublicKeySpec;
 import java.util.Base64;
-
-import javax.crypto.Cipher;
 
 public class RsaUtils {
 
@@ -52,6 +51,7 @@ public class RsaUtils {
     /**
      * 公钥加密，公钥为base64的形式，适用于百度。
      * @param data
+	 * @param base64Key base64的key,请解密后转为16进制再传进来。
      * @return
      */
 	public static String encryptBase64(String data,String base64Key) {
@@ -63,7 +63,7 @@ public class RsaUtils {
 
 
 			//由n和e获取公钥 先把base64解密出byte，再转换成16进制的字符串。
-			publicKey=getPublicKey(bytesToHexString(Base64.getDecoder().decode(base64Key)), "10001");
+			publicKey=getPublicKey(base64Key, "010001");
 
 			//由n和d获取私钥
 			//privateKey=getPrivateKey(modulusString, privateExponentString);
