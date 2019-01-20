@@ -87,6 +87,7 @@ public class Gui implements Printer {
         start.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                status =0;
                 String m = (String) mission.getSelectedItem();
                 int startcount = Integer.parseInt(startCount.getText());
                 int threadnum = Integer.parseInt(threadNum.getText());
@@ -219,7 +220,10 @@ public class Gui implements Printer {
      * @return 1表示换一张，2表示输入完毕。
      */
     public int getStatus(){
-       return status;
+        int ret=status;
+        //状态初始化，避免重复取值。
+        status=0;
+        return ret;
     }
     private void createUIComponents() {
         // TODO: place custom component creation code here
