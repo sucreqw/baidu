@@ -6,6 +6,8 @@ import com.sucre.myNet.Nets;
 import com.sucre.myThread.Thread4Net;
 import com.sucre.utils.MyUtil;
 
+import java.net.URLEncoder;
+
 public class BaiduRegister extends Thread4Net {
     private String mission;
 
@@ -63,8 +65,8 @@ public class BaiduRegister extends Thread4Net {
                         }
                         //用户输入完毕
                         if(!MyUtil.isEmpty(code)) {
-                            String phone = "13539526735";
-                            ret = net.goPost("passport.baidu.com", 443, sendSMS(phone, verifySign, code, verifyStr));
+                            String phone = Factor.getSms().getPhone();
+                            ret = net.goPost("passport.baidu.com", 443, sendSMS(phone, verifySign, URLEncoder.encode(code), verifyStr));
                             System.out.println("code:" + code);
                         }
                     }
