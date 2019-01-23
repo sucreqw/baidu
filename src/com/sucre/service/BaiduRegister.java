@@ -69,6 +69,7 @@ public class BaiduRegister extends Thread4Net {
                     byte[] rets = net.goPostByte("passport.baidu.com", 443, getPic(verifyStr,cookie));
 
                     if (rets != null) {
+                        Factor.getGuiFrame().emptyTxt();
                         MyUtil.print("取到图片流,等待用户输入。", Factor.getGui());
                         //MyUtil.outPutData("pic.png", rets);
                         Controller.getInstance().showPic(rets);
@@ -99,6 +100,7 @@ public class BaiduRegister extends Thread4Net {
                             if(!MyUtil.isEmpty(ret)){
                                 String retNO=MyUtil.midWord("no\": \"","\"",ret);
                                // if("0".equals(retNO)){
+                                   Factor.getGuiFrame().emptyTxt();
                                     MyUtil.print("手机验证码发送成功，请接收后输入并回车！",Factor.getGui());
                                     String pass=Factor.getidInfo().getPassword();
                                     String nick;

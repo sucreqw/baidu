@@ -2,7 +2,6 @@ package com.sucre.gui;
 
 
 import com.sucre.controller.Controller;
-import com.sucre.utils.MyUtil;
 import com.sucre.utils.Printer;
 
 import javax.swing.*;
@@ -91,7 +90,7 @@ public class Gui implements Printer {
                 String m = (String) mission.getSelectedItem();
                 int startcount = Integer.parseInt(startCount.getText());
                 int threadnum = Integer.parseInt(threadNum.getText());
-                Controller.getInstance().doMission(startcount, threadnum, false, m);
+                Controller.getInstance().doMission(startcount, threadnum, true, m);
             }
         });
         /**
@@ -224,6 +223,9 @@ public class Gui implements Printer {
         //状态初始化，避免重复取值。
         status=0;
         return ret;
+    }
+    public void emptyTxt(){
+        filename.setText("");
     }
     private void createUIComponents() {
         // TODO: place custom component creation code here
