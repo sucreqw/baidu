@@ -155,6 +155,9 @@ public class Gui implements Printer {
         frame.setVisible(true);
         frame.setBounds(200, 100, 1024, 599);
 
+        //加载配置信息。
+        Controller.getInstance().load();
+
 
     }
 

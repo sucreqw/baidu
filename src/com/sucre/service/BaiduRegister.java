@@ -104,12 +104,17 @@ public class BaiduRegister extends Thread4Net {
                                     MyUtil.print("手机验证码发送成功，请接收后输入并回车！",Factor.getGui());
                                     String pass=Factor.getidInfo().getPassword();
                                     String nick;
-                                    nick = URLEncoder.encode(Factor.getidInfo().getRandNick());
+                                    nick = Factor.getidInfo().getRandNick();
                                     String sms=Factor.getSms().getCode();
                                     String rsapass= URLEncoder.encode(RsaUtils.encryptBase64(pass,RsaKey));
-                                    ret=net.goPost("passport.baidu.com",443,regSubmit(cookie,URLEncoder.encode(code),token,sms,phone,key,verifySign,verifyStr,nick,rsapass));
+                                    ret=net.goPost("passport.baidu.com",443,regSubmit(cookie,URLEncoder.encode(code),token,sms,phone,key,verifySign,verifyStr,URLEncoder.encode(nick),rsapass));
                                    if(!MyUtil.isEmpty(ret)){
-                                       System.out.println(ret);
+                                       if(ret.indexOf("err_no=0")!=-1){
+                                          MyUtil.print("注册成功！",Factor.getGui());
+                                          MyUtil.outPutData("baiduID.txt",phone + "|" + pass +"|"+ nick );
+                                       }else{
+                                           MyUtil.print("注册失败！错误码："+ MyUtil.midWord("err_no=","&",ret),Factor.getGui());
+                                       }
                                    }
 
                                // }else{
