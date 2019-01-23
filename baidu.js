@@ -15,7 +15,7 @@ function toarray(s){
 
     }
     return toHexString();
-    return enc.toString();
+    //return enc.toString();
 }
 
 function toHexString () {

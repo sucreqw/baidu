@@ -1,6 +1,7 @@
 package com.sucre.factor;
 
 
+import com.sucre.common.idInfo;
 import com.sucre.gui.Gui;
 import com.sucre.service.SMSimpl;
 import com.sucre.service.SMSplatform;
@@ -21,4 +22,8 @@ public class Factor {
 		return SMSimpl.getInstance();
 	}
 
+	//返回id文件配置实例
+	public static idInfo getidInfo(){
+		return idInfo.getInstance();
+	}
 }

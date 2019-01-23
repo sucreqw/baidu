@@ -138,6 +138,7 @@ public class BaiduController {
         switch (mission){
 
             case "注册" :
+
                 MyUtil.print("注册任务开始！", Factor.getGui());
                 break;
 

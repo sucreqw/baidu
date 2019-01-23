@@ -151,7 +151,7 @@ public class MyUtil {
 	 * @return String 类型的随机数�?
 	 */
 	public static String getRand(int u, int l) {
-		Random r = new Random();
+		Random r = new Random(System.currentTimeMillis());
 		return String.valueOf(((r.nextInt(u - l) + l)));
 	}
 

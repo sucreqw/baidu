@@ -4,6 +4,7 @@ import com.sucre.controller.Controller;
 import com.sucre.factor.Factor;
 import com.sucre.myNet.Nets;
 import com.sucre.myThread.Thread4Net;
+import com.sucre.utils.JsUtil;
 import com.sucre.utils.MyUtil;
 import com.sucre.utils.RsaUtils;
 
@@ -52,6 +53,9 @@ public class BaiduRegister extends Thread4Net {
                     RsaKey=RsaKey.replace("\\/","/");
                     RsaKey=RsaUtils.bytesToHexString(Base64.getDecoder().decode(RsaKey));
                     RsaKey=RsaKey.replace("010001","");
+                    RsaKey= JsUtil.runJS("toarray",RsaKey);
+                    RsaKey=RsaKey.substring(6,RsaKey.length());
+                   // System.out.println(RsaKey+"《==》");
                 }
 
                 //第一步先取到图片的hash
@@ -95,10 +99,10 @@ public class BaiduRegister extends Thread4Net {
                             if(!MyUtil.isEmpty(ret)){
                                 String retNO=MyUtil.midWord("no\": \"","\"",ret);
                                // if("0".equals(retNO)){
-                                    MyUtil.print("验证码发送成功，请接收后输入并回车！",Factor.getGui());
-                                    String pass="wqwqwqwq";
+                                    MyUtil.print("手机验证码发送成功，请接收后输入并回车！",Factor.getGui());
+                                    String pass=Factor.getidInfo().getPassword();
                                     String nick;
-                                    nick = URLEncoder.encode("强我弱h");
+                                    nick = URLEncoder.encode(Factor.getidInfo().getRandNick());
                                     String sms=Factor.getSms().getCode();
                                     String rsapass= URLEncoder.encode(RsaUtils.encryptBase64(pass,RsaKey));
                                     ret=net.goPost("passport.baidu.com",443,regSubmit(cookie,URLEncoder.encode(code),token,sms,phone,key,verifySign,verifyStr,nick,rsapass));

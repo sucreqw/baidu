@@ -1,10 +1,8 @@
 package com.sucre.controller;
 
 import com.sucre.dao.vidDao;
-import com.sucre.entity.Baidu;
 import com.sucre.entity.CommonEntity;
 import com.sucre.factor.Factor;
-import com.sucre.impl.BaiduImpl;
 import com.sucre.impl.CommonImpl;
 import com.sucre.impl.VidImpl;
 import com.sucre.listUtil.MutiList;
@@ -26,20 +24,26 @@ public class Controller {
 
     /**
      * 导入ip文件配置。
-     *//*
+     */
 	public void load() {
-		try {
-			// 导入换ip配置
-			Info info = accounts.getInstance();
-			MyUtil.loadADSL("adsl.properties", accounts.getInstance());
-			MyUtil.print(info.getADSL() + "<>" + info.getADSLname() + "<>" + info.getADSLpass(), Factor.getGui());
-			// 加载js
-			JsUtil.loadJs("js.js");
-			JdbcConnector.Load("jdbc.properties");
-		} catch (Exception e) {
-			MyUtil.print("导入文件出错：" + e.getMessage(), Factor.getGui());
-		}
-	}*/
+        try {
+            // 导入换ip配置
+            Info info = accounts.getInstance();
+            MyUtil.loadADSL("adsl.properties", accounts.getInstance());
+            MyUtil.print(info.getADSL() + "<>" + info.getADSLname() + "<>" + info.getADSLpass(), Factor.getGui());
+            // 加载js
+            //JsUtil.loadJs("js.js");
+            //JdbcConnector.Load("jdbc.properties");
+
+            //加载注册账号配置信息。
+            Factor.getidInfo().load("id.properties");
+            Factor.getidInfo().loadNick();
+
+
+        } catch (Exception e) {
+            MyUtil.print("导入文件出错：" + e.getMessage(), Factor.getGui());
+        }
+    }
 
     /**
      * 加载指定文件到账号列表
@@ -140,6 +144,8 @@ public class Controller {
         switch (mission) {
 
             case "注册":
+                //加载js 算法
+                JsUtil.loadJs("baidu.js");
                 BaiduRegister baiduRegister = new BaiduRegister(start, limit, isCircle, mission);
                 for (int i = 1; i <= thread; i++) {
 
