@@ -99,7 +99,7 @@ public class BaiduRegister extends Thread4Net {
                             ret = net.goPost("passport.baidu.com", 443, sendSMS(phone, verifySign, URLEncoder.encode(code), verifyStr,cookie,token));
                             if(!MyUtil.isEmpty(ret)){
                                 String retNO=MyUtil.midWord("no\": \"","\"",ret);
-                               // if("0".equals(retNO)){
+                                if("0".equals(retNO)){
                                    Factor.getGuiFrame().emptyTxt();
                                     MyUtil.print("手机验证码发送成功，请接收后输入并回车！",Factor.getGui());
                                     String pass=Factor.getidInfo().getPassword();
@@ -117,9 +117,9 @@ public class BaiduRegister extends Thread4Net {
                                        }
                                    }
 
-                               // }else{
-                                //    MyUtil.print("验证码发送失败，错误码："+ retNO,Factor.getGui());
-                               // }
+                               }else{
+                                    MyUtil.print("验证码发送失败，错误码："+ retNO,Factor.getGui());
+                               }
                             }
 
 
