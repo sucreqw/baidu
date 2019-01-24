@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba7c0703-6598-4391-b840-2b40f31f368b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coding.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coding.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
               <caret line="240" column="25" lean-forward="true" selection-start-line="240" selection-start-column="25" selection-end-line="240" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/coding.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="120" selection-start-line="18" selection-start-column="120" selection-end-line="18" selection-end-column="120" />
             </state>
           </provider>
         </entry>
@@ -92,12 +100,12 @@
         <option value="$PROJECT_DIR$/nick.txt" />
         <option value="$PROJECT_DIR$/src/com/sucre/gui/Gui.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java" />
-        <option value="$PROJECT_DIR$/coding.txt" />
         <option value="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" />
+        <option value="$PROJECT_DIR$/coding.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="1890" />
@@ -243,7 +251,7 @@
       <workItem from="1548073581253" duration="4300000" />
       <workItem from="1548202591187" duration="5908000" />
       <workItem from="1548251598567" duration="515000" />
-      <workItem from="1548295559212" duration="1606000" />
+      <workItem from="1548295559212" duration="1855000" />
     </task>
     <servers />
   </component>
@@ -280,7 +288,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74775000" />
+    <option name="totallyTimeSpent" value="75024000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -295,7 +303,7 @@
     <frame x="1" y="23" width="1890" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2564935" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2564935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -306,7 +314,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32786885" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.34918034" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.3683616" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.3683616" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3292683" />
@@ -743,17 +751,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coding.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="240" column="25" lean-forward="true" selection-start-line="240" selection-start-column="25" selection-end-line="240" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coding.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="120" selection-start-line="18" selection-start-column="120" selection-end-line="18" selection-end-column="120" />
         </state>
       </provider>
     </entry>
