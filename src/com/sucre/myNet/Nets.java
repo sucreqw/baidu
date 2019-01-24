@@ -214,14 +214,19 @@ public class Nets {
 		int retStart=-1;
 		//用来接收查找的结果，结束部分
 		int retEnd=-1;
-		//前面循环查看是否存在换行符
+		/*//前面循环查看是否存在换行符
 		for(int i=start;i<=halfStart; i++){
 			//找到换行符
 			if(source[i]==13 && source[i+1]==10){
                retStart=i+2;
                break;
 		    }
-		}
+		}*/
+
+		//直接查找图片的头部十六进制码 png头
+		int temp=serachB(source, new byte[] { -119, 80, 78, 71 } );
+		if(temp!=-1 && temp>retStart){ retStart=temp;}
+
 		//往后循环查看是否存在换行符
 		for(int i=halfStart;i<end; i++){
 			//找到换行符

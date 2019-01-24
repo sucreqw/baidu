@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba7c0703-6598-4391-b840-2b40f31f368b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/coding.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coding.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,101 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3890">
-              <caret line="306" selection-start-line="306" selection-end-line="306" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/coding.txt">
+        <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4921">
-              <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sucre/utils/MyUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7866">
-              <caret line="425" selection-start-line="425" selection-end-line="425" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sucre/controller/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sucre/common/idInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1717#1718#0" expanded="true" />
-                <element signature="e#1803#1804#0" expanded="true" />
-                <element signature="e#1899#1900#0" expanded="true" />
-                <element signature="e#1928#1929#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sucre/gui/Gui.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2831">
-              <caret line="157" column="17" selection-start-line="157" selection-start-column="17" selection-end-line="157" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/id.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/id.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nick.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190000">
-              <caret line="10000" column="5" selection-start-line="10000" selection-start-column="5" selection-end-line="10000" selection-end-column="5" />
+            <state relative-caret-position="194">
+              <caret line="240" column="25" lean-forward="true" selection-start-line="240" selection-start-column="25" selection-end-line="240" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -166,7 +76,6 @@
         <option value="$PROJECT_DIR$/src/com/sucre/gui/About.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/utils/Info.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/myThread/Thread4Net.java" />
-        <option value="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/test/Test.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/service/SMSimpl.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/utils/RsaUtil.java" />
@@ -184,13 +93,15 @@
         <option value="$PROJECT_DIR$/src/com/sucre/gui/Gui.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java" />
         <option value="$PROJECT_DIR$/coding.txt" />
+        <option value="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-6" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1" />
+    <option name="y" value="23" />
+    <option name="width" value="1890" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -199,6 +110,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,11 +118,28 @@
               <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
               <item name="baidu" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sucre" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sucre" type="462c0819:PsiDirectoryNode" />
+              <item name="myNet" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,6 +243,7 @@
       <workItem from="1548073581253" duration="4300000" />
       <workItem from="1548202591187" duration="5908000" />
       <workItem from="1548251598567" duration="515000" />
+      <workItem from="1548295559212" duration="1606000" />
     </task>
     <servers />
   </component>
@@ -350,7 +280,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72772000" />
+    <option name="totallyTimeSpent" value="74775000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -362,10 +292,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1" y="23" width="1890" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25416037" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2564935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -376,7 +306,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32786885" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.34918034" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.36885247" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.3683616" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3292683" />
@@ -442,11 +372,20 @@
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java</url>
+          <line>229</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="encryptedBytes" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="source[268]" />
       </configuration>
     </watches-manager>
   </component>
@@ -745,20 +684,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3230">
-          <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4921">
-          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sucre/utils/MyUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7866">
@@ -821,6 +747,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="240" column="25" lean-forward="true" selection-start-line="240" selection-start-column="25" selection-end-line="240" selection-end-column="25" />
         </state>
       </provider>
     </entry>
