@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba7c0703-6598-4391-b840-2b40f31f368b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/coding.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coding.txt" afterDir="false" />
-    </list>
+    <list default="true" id="ba7c0703-6598-4391-b840-2b40f31f368b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,22 +22,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="240" column="25" lean-forward="true" selection-start-line="240" selection-start-column="25" selection-end-line="240" selection-end-column="25" />
+            <state relative-caret-position="263">
+              <caret line="225" selection-start-line="225" selection-end-line="225" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coding.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="120" selection-start-line="18" selection-start-column="120" selection-end-line="18" selection-end-column="120" />
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sucre/gui/About.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -80,7 +83,6 @@
         <option value="$PROJECT_DIR$/src/com/sucre/entity/CommonEntity.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/dao/CommonDao.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/impl/CommonImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/sucre/gui/About.form" />
         <option value="$PROJECT_DIR$/src/com/sucre/gui/About.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/utils/Info.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/myThread/Thread4Net.java" />
@@ -102,6 +104,7 @@
         <option value="$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" />
         <option value="$PROJECT_DIR$/coding.txt" />
+        <option value="$PROJECT_DIR$/src/com/sucre/gui/About.form" />
       </list>
     </option>
   </component>
@@ -142,6 +145,21 @@
               <item name="baidu" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sucre" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sucre" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="About" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sucre" type="462c0819:PsiDirectoryNode" />
               <item name="myNet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -159,7 +177,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="249" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548249903097" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548324218444" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -251,7 +269,7 @@
       <workItem from="1548073581253" duration="4300000" />
       <workItem from="1548202591187" duration="5908000" />
       <workItem from="1548251598567" duration="515000" />
-      <workItem from="1548295559212" duration="1855000" />
+      <workItem from="1548295559212" duration="2638000" />
     </task>
     <servers />
   </component>
@@ -288,7 +306,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75024000" />
+    <option name="totallyTimeSpent" value="75807000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -301,7 +319,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1890" height="977" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2564935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -379,12 +396,6 @@
           <line>306</line>
           <properties />
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java</url>
-          <line>229</line>
-          <properties />
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -526,9 +537,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sucre/gui/About.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/gui/Gui.form">
       <provider selected="true" editor-type-id="ui-designer" />
@@ -751,17 +759,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="240" column="25" lean-forward="true" selection-start-line="240" selection-start-column="25" selection-end-line="240" selection-end-column="25" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/com/sucre/gui/About.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/coding.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="120" selection-start-line="18" selection-start-column="120" selection-end-line="18" selection-end-column="120" />
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="225" selection-start-line="225" selection-end-line="225" selection-end-column="29" />
         </state>
       </provider>
     </entry>
