@@ -55,13 +55,14 @@ public class BaiduLogin extends Thread4Net {
                         String pass= URLEncoder.encode(RsaUtils.encryptBase64("wqwqwq19890407",RsaKey));
                         //最后登录。
                         ret=net.goPost("passport.baidu.com", 443,loging(cookie,"906509023@qq.com",pass,token,key));
-                        if(!MyUtil.isEmpty(ret)){
-
+                        if(!MyUtil.isEmpty(ret))
+                            cookie=MyUtil.getAllCookie(ret);
+                        
                         }
                     }
 
                 }
-            }
+
         } catch (Exception e) {
             System.out.println("出错了：" + e.getMessage());
         }
@@ -80,7 +81,7 @@ public class BaiduLogin extends Thread4Net {
                 + "&codestring=&safeflg=0&u=https%3A%2F%2Fwapbaike.baidu.com%2Fstarflower%2Fstarrank%3FrankType%3Dall%26lemmaId%3D75850%26lemmaTitle%3D%25E7%258E%258B%25E4%25BF%258A%25E5%2587%25AF%26isRank%3D1%26bk_share%3Dwechat%26bk_sharefr%3DshushuoRank%26from%3Dsinglemessage%26isappinstalled%3D0&isPhone=&detect=1&gid=CD8C6AB-CC4D-4054-8DF9-8B1DDA0372F3&quick_user=0&logintype=basicLogin&logLoginType=pc_loginBasic&idc=&loginmerge=true&username=" + id
                 + "&password=" + pass
                 + "&mem_pass=on&rsakey=" + rsakey
-                + "&crypttype=12&ppui_logintime=29328&countrycode=&fp_uid=&fp_info=&loginversion=v4&callback=parent.bd__pcbs__r66f0y\r\n";
+                + "&crypttype=12&ppui_logintime=29328&countrycode=&fp_uid=&fp_info=&loginversion=v4&ds=d3hMaElTTY4w0ybxpYmQhV2nygbIQiuBs4ekC8MgkQDoq%2FRLhyOuF4Txo9WyUVy8l060nCFP08Jl9p33Jfm6TbJbvyhndAB37xf9Yh3WA6gsbvS1FQWpoE790ZdcBHJj7jWG1TRdTYBTfX52n7dZXTZooFAROJphgJ8%2BCrOIH4uZmoMOQVhzZGxtDU3uCq7LnFHXBwN7tWOE3NVdesJ2DhqnlTkag5UgmJNC6ZVXgBela9ykt%2BF92nhnb21tVbf8rSVRwFpJCRId52NyKPZ3GC2OwF0%2FdoR8dmlc4jproEFRe%2F%2Fddap1epCfuVKU3cG%2BjbspI6DGb0SPQcx7D1YzDUVePoDSvBKNacFGImVUkUC6g2ZfZABla%2B0g3vcw1KMaj5TYTNHrSqXQKFjQFW6o9h0EsvYsDnZxzBglHkFD1eXlZMHeHLqbSZ%2FwaVSkKWRXlj9TWuNN1BcSU3KYv%2Bms1V%2FK5VuQlfAeLD2rUZC804wIq2ft0TAYYbAbYBySKNF2Tp99kXFUyTgpUOPvCnWUZHflXVO1EoVAv%2BP%2BG35%2B08M%3D&tk=4300igFTr%2BCSTqcKHNocm%2FmK%2BnAIzoc0fh3SPJKSRl9RDYA%3D&dv=tk0.98469829039677511550924584821%40qqt0Tupn9f2maJtJlsJ3upCyetJyhP2yePQCpO93lTMLJfpn2w2Xg-Bmgg8uGhn3QrtJyPCyhnJuYRCyey9dIwnUuZArgypkt%7EPkJ-8kqfIvuBGy5hnIePJuptCRpPCjIRAC5BELyO8kEgpkTYpn2f2maJtJlsJ3upCyetJyhP2yePQCpO93lTMLJfpN2d2sg-Bmgg8uGhn3QrtJyPCyhnJuYRCyey9dIwnUuZArgdpkKRPq__vt0LvBk4y8kJRBmgwBn9a8uGhn3QrtJyPCyhnJuYRCyeUMde-AC5G9UpiA0ImQ0lYBkty8k2gBrga2RJw2waJtJlsJ3upCyetJyhP2yeP90uR9jQi9UGYBktd8k2dp1gw2kKj21aJtJlsJ3upCyetJyhP2yePMLIZEUIwJ0uR9-aTEUIfPq__urr6wr-Ffn99h-th2rgw8k9aItpQ0fg8N3%7EpkElBk4l2k2lpN9jpnvapnJgBn4-pnK-Bk4aht0yr6sG-9s2W8wegECpR90ewQml1ELO3QrlNMd-iQN4i7daiAdOD8sIDA0IU6LlOAq__Fto2mgg8kvRpk3fpNJd8kvRpNEfpRE%7E8kvRpNEf2n2dp1gj2NK_&traceid=07302E01&callback=parent.bd__pcbs__r66f0y\r\n";
 
         data.append("POST https://passport.baidu.com/v2/api/?login HTTP/1.1\r\n");
         data.append("Host: passport.baidu.com\r\n");

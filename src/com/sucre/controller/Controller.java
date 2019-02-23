@@ -7,7 +7,7 @@ import com.sucre.impl.CommonImpl;
 import com.sucre.impl.VidImpl;
 import com.sucre.listUtil.MutiList;
 import com.sucre.myThread.Thread4Net;
-import com.sucre.service.BaiduLoginMac;
+import com.sucre.service.BaiduLogin;
 import com.sucre.service.BaiduRegister;
 import com.sucre.utils.*;
 
@@ -153,7 +153,7 @@ public class Controller {
                 break;
             case "登录" :
                 JsUtil.loadJs("baidu.js");
-                BaiduLoginMac baiduLogin=new BaiduLoginMac(start,limit,isCircle);
+                BaiduLogin baiduLogin=new BaiduLogin(start,limit,isCircle);
                 startThread(baiduLogin,thread);
                 break;
             default:
