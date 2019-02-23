@@ -6,6 +6,8 @@ import com.sucre.factor.Factor;
 import com.sucre.impl.CommonImpl;
 import com.sucre.impl.VidImpl;
 import com.sucre.listUtil.MutiList;
+import com.sucre.myThread.Thread4Net;
+import com.sucre.service.BaiduLoginMac;
 import com.sucre.service.BaiduRegister;
 import com.sucre.utils.*;
 
@@ -147,17 +149,13 @@ public class Controller {
                 //加载js 算法
                 JsUtil.loadJs("baidu.js");
                 BaiduRegister baiduRegister = new BaiduRegister(start, limit, isCircle, mission);
-                for (int i = 1; i <= thread; i++) {
-
-                    Thread t = new Thread(baiduRegister);
-                    if (i == 1) {
-                        t.setName("ip");
-                    }
-                    t.start();
-                }
+                startThread(baiduRegister,thread);
                 break;
-
-
+            case "登录" :
+                JsUtil.loadJs("baidu.js");
+                BaiduLoginMac baiduLogin=new BaiduLoginMac(start,limit,isCircle);
+                startThread(baiduLogin,thread);
+                break;
             default:
 
 
@@ -165,6 +163,22 @@ public class Controller {
 
     }
 
+    /**
+     * 启动线程，开始任务。
+     * @param net
+     * @param thread
+     */
+    private void startThread(Thread4Net net, int thread){
+        for (int i = 1; i <= thread; i++) {
+
+            Thread t = new Thread(net);
+            if (i == 1) {
+                t.setName("ip");
+            }
+            t.start();
+        }
+
+    }
     /**
      * 投票类
      *

@@ -48,6 +48,37 @@ public class RsaUtils {
 		return bytesToHexString(encryptedBytes);
 	}
 
+	/**
+	 * 加密,用公钥.调用者提供公钥，是16进制形式的公钥，适用于新浪，腾讯。
+	 * @param data
+	 * @return
+	 */
+	public static String encrypt(String data ,String key,String Exponent) {
+		// TODO Auto-generated method stub
+		PublicKey publicKey=null;
+		PrivateKey privateKey=null;
+		byte[] encryptedBytes=null;
+		try {
+
+
+			//由n和e获取公钥
+			publicKey=getPublicKey(key, Exponent);
+
+			//由n和d获取私钥
+			//privateKey=getPrivateKey(modulusString, privateExponentString);
+
+			//公钥加密
+			encryptedBytes=encrypt(data.getBytes(), publicKey);
+
+			//私钥解密
+			//byte[] decryptedBytes=decrypt(encryptedBytes, privateKey);
+			//System.out.println("解密后："+new String(decryptedBytes));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return bytesToHexString(encryptedBytes);
+	}
     /**
      * 公钥加密，公钥为base64的形式，适用于百度。
      * @param data

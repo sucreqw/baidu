@@ -41,7 +41,7 @@ public class Gui implements Printer {
 
     private Gui() {
         //设置mission选项的内容
-        mission.setModel(new DefaultComboBoxModel(new String[]{"注册"}));
+        mission.setModel(new DefaultComboBoxModel(new String[]{"注册","登录"}));
 
         /**
          * 加载id
@@ -81,7 +81,8 @@ public class Gui implements Printer {
         });
 
         /**
-         * 开始任务
+         * 开始任务，这里不做任何判断，直接把任务名传到controller处理。
+         *
          */
         start.addActionListener(new ActionListener() {
             @Override
