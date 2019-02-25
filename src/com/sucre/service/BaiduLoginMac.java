@@ -1,11 +1,9 @@
 package com.sucre.service;
 
-import com.sucre.entity.Baidu;
-import com.sucre.impl.BaiduImpl;
 import com.sucre.myNet.Nets;
 import com.sucre.myThread.Thread4Net;
+import com.sucre.utils.JsUtil;
 import com.sucre.utils.MyUtil;
-import com.sucre.utils.RsaUtils;
 
 /**
  * @author sucre chen
@@ -30,7 +28,9 @@ public class BaiduLoginMac extends Thread4Net {
         if(!MyUtil.isEmpty(ret)){
             String serverTime=MyUtil.midWord("time\":\"","\"}",ret);
 
-            String pass= RsaUtils.encrypt("wqwqwq19890407"+serverTime,Key,"10001").toLowerCase();
+            //String pass= RsaUtils.encrypt("wqwqwq19890407"+serverTime,Key,"10001").toLowerCase();
+            JsUtil.loadJs("baiduRSA.js");
+            String pass=JsUtil.runJS("get","wqwqwq19890407"+serverTime);
             ret=net.goPost("wappass.baidu.com",443,loging("","906509023%40qq.com",pass,serverTime));
             if(!MyUtil.isEmpty(ret)){
 
