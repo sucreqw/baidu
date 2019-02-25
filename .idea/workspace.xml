@@ -7,12 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba7c0703-6598-4391-b840-2b40f31f368b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/id.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/id.txt" beforeDir="false" afterPath="$PROJECT_DIR$/id.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/service/BaiduLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/service/BaiduLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/gui/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/gui/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,16 +52,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="104" column="26" lean-forward="true" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+            <state relative-caret-position="417">
+              <caret line="106" column="66" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#566#567#0" expanded="true" />
                 <element signature="e#603#604#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/id.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -94,15 +99,6 @@
                 <element signature="e#1313#1314#0" expanded="true" />
                 <element signature="e#1344#1345#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/id.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="31" selection-start-column="31" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -216,10 +212,10 @@
         <option value="$PROJECT_DIR$/src/com/sucre/entity/CommonEntity.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/service/BaiduLoginMac.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/impl/CommonImpl.java" />
-        <option value="$PROJECT_DIR$/id.txt" />
         <option value="$PROJECT_DIR$/src/com/sucre/gui/Gui.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java" />
+        <option value="$PROJECT_DIR$/id.txt" />
       </list>
     </option>
   </component>
@@ -332,7 +328,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="249" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551062768583" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551063738865" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -463,7 +459,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105982000" />
+    <option name="totallyTimeSpent" value="106007000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,7 +474,7 @@
     <frame x="0" y="23" width="1920" height="1006" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15761448" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15761448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -489,7 +485,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32786885" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.34918034" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.28774616" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.28774616" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3292683" />
@@ -864,13 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/id.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/entity/CommonEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -954,13 +943,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="104" column="26" lean-forward="true" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+        <state relative-caret-position="417">
+          <caret line="106" column="66" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#566#567#0" expanded="true" />
             <element signature="e#603#604#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/id.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
