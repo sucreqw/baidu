@@ -16,8 +16,8 @@ public class CommonImpl implements CommonDao {
     public void loadList(String fileName) {
         try {
             // 加载文件
-            list.loadFromFile(fileName);
-            MyUtil.print("导入成功<==>" + String.valueOf(list.getSize()), Factor.getGui());
+            this.list.loadFromFile(fileName);
+            MyUtil.print("导入成功<==>" + String.valueOf(this.list.getSize()), Factor.getGui());
         } catch (Exception e) {
             MyUtil.print("导入错误：" + e.getMessage(), Factor.getGui());
         }

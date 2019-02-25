@@ -1,7 +1,6 @@
 package com.sucre.impl;
 
 import com.sucre.dao.BaiduDao;
-import com.sucre.dao.CommonDao;
 import com.sucre.entity.Baidu;
 import com.sucre.factor.Factor;
 import com.sucre.listUtil.MutiList;
@@ -29,18 +28,23 @@ public class BaiduImpl implements BaiduDao {
     }
 
     @Override
-    public Baidu get(int index, Baidu weibo) {
-        return null;
+    public Baidu get(int index, Baidu baidu) {
+        return load(list.get(index),baidu);
     }
 
     @Override
-    public Baidu load(String id, String pass, Baidu weibo) {
-        return null;
+    public Baidu load(String id, String pass, Baidu baidu) {
+        //Baidu baidu=new Baidu(id,pass);
+        baidu.setId(id);
+        baidu.setPass(pass);
+        return baidu;
     }
 
     @Override
-    public Baidu load(String inputData, Baidu weibo) {
-        return null;
+    public Baidu load(String inputData, Baidu baidu) {
+       // Baidu baidu=new Baidu();
+        baidu.load(inputData);
+        return baidu;
     }
 
     @Override

@@ -1,5 +1,8 @@
 package com.sucre.service;
 
+import com.sucre.controller.Controller;
+import com.sucre.entity.Baidu;
+import com.sucre.impl.CommonImpl;
 import com.sucre.myNet.Nets;
 import com.sucre.myThread.Thread4Net;
 import com.sucre.utils.JsUtil;
@@ -25,9 +28,13 @@ public class BaiduLogin extends Thread4Net {
 
     @Override
     public int doWork(int index) {
+
         Nets net = new Nets();
         String ret;
 
+        Baidu baidu=new Baidu();
+        CommonImpl baiduimpl= Controller.getInstance().ImplId;
+        baidu=(Baidu) baiduimpl.get(index-1, baidu);
         try {
             //取cookie
             ret = net.goPost("passport.baidu.com", 443, getCookie());
@@ -52,12 +59,12 @@ public class BaiduLogin extends Thread4Net {
                         RsaKey = JsUtil.runJS("toarray", RsaKey);
                         RsaKey = RsaKey.substring(6, RsaKey.length());
 
-                        String pass= URLEncoder.encode(RsaUtils.encryptBase64("wqwqwq19890407",RsaKey));
+                        String pass= URLEncoder.encode(RsaUtils.encryptBase64(baidu.getPass(),RsaKey));
                         //最后登录。
-                        ret=net.goPost("passport.baidu.com", 443,loging(cookie,"906509023@qq.com",pass,token,key));
+                        ret=net.goPost("passport.baidu.com", 443,loging(cookie,baidu.getId(),pass,token,key));
                         if(!MyUtil.isEmpty(ret))
                             cookie=MyUtil.getAllCookie(ret);
-                        
+
                         }
                     }
 

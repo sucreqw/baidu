@@ -74,6 +74,7 @@ public class CommonEntity<T> {
     public CommonEntity (String inputdata) {
         load(inputdata);
     }
+    //加载到各个变量
     public void load(String inputdata){
         try {
             String[] temp = inputdata.split("\\|");

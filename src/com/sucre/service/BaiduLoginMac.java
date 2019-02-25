@@ -1,5 +1,7 @@
 package com.sucre.service;
 
+import com.sucre.entity.Baidu;
+import com.sucre.impl.BaiduImpl;
 import com.sucre.myNet.Nets;
 import com.sucre.myThread.Thread4Net;
 import com.sucre.utils.MyUtil;
@@ -20,12 +22,14 @@ public class BaiduLoginMac extends Thread4Net {
 
     @Override
     public int doWork(int index) {
+
         Nets net=new Nets();
         String ret;
         String Key="B3C61EBBA4659C4CE3639287EE871F1F48F7930EA977991C7AFE3CC442FEA49643212E7D570C853F368065CC57A2014666DA8AE7D493FD47D171C0D894EEE3ED7F99F6798B7FFD7B5873227038AD23E3197631A8CB642213B9F27D4901AB0D92BFA27542AE890855396ED92775255C977F5C302F1E7ED4B1E369C12CB6B1822F";
         ret=net.goPost("wappass.baidu.com",443,getServerTime());
         if(!MyUtil.isEmpty(ret)){
             String serverTime=MyUtil.midWord("time\":\"","\"}",ret);
+
             String pass= RsaUtils.encrypt("wqwqwq19890407"+serverTime,Key,"10001").toLowerCase();
             ret=net.goPost("wappass.baidu.com",443,loging("","906509023%40qq.com",pass,serverTime));
             if(!MyUtil.isEmpty(ret)){

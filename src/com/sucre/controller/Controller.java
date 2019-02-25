@@ -16,9 +16,9 @@ import javax.swing.*;
 public class Controller {
 
     public static Controller controller = new Controller();
-    private CommonImpl ImplId;
-    private CommonImpl ImplCookie;
-    private VidImpl vidImpl;
+    public CommonImpl ImplId;
+    public CommonImpl ImplCookie;
+    public VidImpl vidImpl;
     private boolean stop = false;
 
     private Controller() {
