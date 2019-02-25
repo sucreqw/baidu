@@ -88,11 +88,11 @@ public class Gui implements Printer {
             @Override
             public void actionPerformed(ActionEvent e) {
                 status =0;
-                String m = (String) mission.getSelectedItem();
-                int startcount = Integer.parseInt(startCount.getText());
-                int threadnum = Integer.parseInt(threadNum.getText());
+            String m = (String) mission.getSelectedItem();
+            int startcount = Integer.parseInt(startCount.getText());
+            int threadnum = Integer.parseInt(threadNum.getText());
                 Controller.getInstance().doMission(startcount, threadnum, true, m);
-            }
+        }
         });
         /**
          * 暂停任务

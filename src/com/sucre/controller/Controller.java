@@ -153,7 +153,7 @@ public class Controller {
                 break;
             case "登录" :
                 JsUtil.loadJs("baidu.js");
-                BaiduLogin baiduLogin=new BaiduLogin(start,limit,isCircle);
+                BaiduLogin baiduLogin=new BaiduLogin(start,limit,false);
                 startThread(baiduLogin,thread);
                 break;
             default:
