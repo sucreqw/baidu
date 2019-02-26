@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/id.txt" beforeDir="false" afterPath="$PROJECT_DIR$/id.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/baidu/com/sucre/service/BaiduLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/baidu/com/sucre/service/BaiduLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,37 +29,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduRegister.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="287" column="1230" selection-start-line="287" selection-start-column="1226" selection-end-line="287" selection-end-column="1230" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sucre/utils/RsaUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coding.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="114">
+              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduLoginMac.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="104" column="74" selection-start-line="104" selection-start-column="74" selection-end-line="104" selection-end-column="74" />
+            <state relative-caret-position="199">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,10 +50,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-494">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/id.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="31" selection-start-column="31" selection-end-column="31" />
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -78,22 +84,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sucre/impl/BaiduImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            <state relative-caret-position="-524">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#835#836#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sucre/gui/Gui.java">
+        <entry file="file://$PROJECT_DIR$/src/com/sucre/entity/Baidu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="93" column="78" selection-start-line="93" selection-start-column="74" selection-end-line="93" selection-end-column="78" />
+            <state relative-caret-position="312">
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#154#155#0" expanded="true" />
+                <element signature="e#185#186#0" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#255#256#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,38 +114,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sucre/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="153" column="23" lean-forward="true" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2638#2639#0" expanded="true" />
-                <element signature="e#2668#2669#0" expanded="true" />
-                <element signature="e#2805#2806#0" expanded="true" />
-                <element signature="e#2851#2852#0" expanded="true" />
-                <element signature="e#5157#5158#0" expanded="true" />
-                <element signature="e#5213#5214#0" expanded="true" />
-                <element signature="e#5963#5964#0" expanded="true" />
-                <element signature="e#5996#5997#0" expanded="true" />
-                <element signature="e#6297#6298#0" expanded="true" />
-                <element signature="e#6343#6344#0" expanded="true" />
-                <element signature="e#6399#6400#0" expanded="true" />
-                <element signature="e#6432#6433#0" expanded="true" />
-                <element signature="e#6486#6487#0" expanded="true" />
-                <element signature="e#6518#6519#0" expanded="true" />
-                <element signature="e#6610#6611#0" expanded="true" />
-                <element signature="e#6642#6643#0" expanded="true" />
-                <element signature="e#6725#6726#0" expanded="true" />
-                <element signature="e#6780#6781#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1273">
+              <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduLoginMac.java">
+        <entry file="file://$PROJECT_DIR$/src/com/sucre/impl/CommonImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="122">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,12 +133,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baiduRSA.js">
+        <entry file="file://$PROJECT_DIR$/src/com/sucre/listUtil/MutiList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="767" column="5" lean-forward="true" selection-start-line="767" selection-start-column="5" selection-end-line="767" selection-end-column="5" />
+            <state relative-caret-position="108">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1650#1651#0" expanded="true" />
+                <element signature="e#1674#1675#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/com/sucre/gui/About.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/utils/Info.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/myThread/Thread4Net.java" />
-        <option value="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/test/Test.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/service/SMSimpl.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/utils/RsaUtil.java" />
@@ -215,16 +206,17 @@
         <option value="$PROJECT_DIR$/baiduRSA.js" />
         <option value="$PROJECT_DIR$/src/com/sucre/service/BaiduLoginMac.java" />
         <option value="$PROJECT_DIR$/coding.txt" />
-        <option value="$PROJECT_DIR$/id.txt" />
         <option value="$PROJECT_DIR$/src/com/sucre/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java" />
+        <option value="$PROJECT_DIR$/src/com/sucre/myNet/Nets.java" />
+        <option value="$PROJECT_DIR$/id.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="983" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-6" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -233,7 +225,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,12 +248,62 @@
               <item name="baidu" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sucre" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sucre" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sucre" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sucre" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sucre" type="462c0819:PsiDirectoryNode" />
+              <item name="listUtil" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sucre" type="462c0819:PsiDirectoryNode" />
+              <item name="myNet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sucre" type="462c0819:PsiDirectoryNode" />
+              <item name="myThread" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sucre" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,8 +315,8 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="249" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551079953918" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551186026591" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -406,7 +447,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111564000" />
+    <option name="totallyTimeSpent" value="114997000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -418,10 +459,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="983" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15921193" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20801815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -432,7 +473,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32786885" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.34918034" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.28826815" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.31311476" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3292683" />
@@ -441,7 +482,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32932165" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32290503" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32131147" />
       <window_info anchor="bottom" id="Problems" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -509,12 +550,6 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java</url>
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/sucre/entity/CommonEntity.java</url>
           <line>46</line>
           <properties />
@@ -537,6 +572,24 @@
           <line>33</line>
           <properties />
           <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -691,13 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3230">
-          <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nick.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190000">
@@ -812,7 +858,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/impl/CommonImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
+        <state relative-caret-position="122">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -829,17 +875,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/coding.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="114">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/impl/BaiduImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state relative-caret-position="-524">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -871,17 +919,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/id.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduLoginMac.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="199">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -890,39 +931,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="153" column="23" lean-forward="true" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2638#2639#0" expanded="true" />
-            <element signature="e#2668#2669#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2851#2852#0" expanded="true" />
-            <element signature="e#5157#5158#0" expanded="true" />
-            <element signature="e#5213#5214#0" expanded="true" />
-            <element signature="e#5963#5964#0" expanded="true" />
-            <element signature="e#5996#5997#0" expanded="true" />
-            <element signature="e#6297#6298#0" expanded="true" />
-            <element signature="e#6343#6344#0" expanded="true" />
-            <element signature="e#6399#6400#0" expanded="true" />
-            <element signature="e#6432#6433#0" expanded="true" />
-            <element signature="e#6486#6487#0" expanded="true" />
-            <element signature="e#6518#6519#0" expanded="true" />
-            <element signature="e#6610#6611#0" expanded="true" />
-            <element signature="e#6642#6643#0" expanded="true" />
-            <element signature="e#6725#6726#0" expanded="true" />
-            <element signature="e#6780#6781#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1273">
+          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sucre/myNet/Nets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-494">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sucre/service/BaiduLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="104" column="74" selection-start-line="104" selection-start-column="74" selection-end-line="104" selection-end-column="74" />
+        <state relative-caret-position="266">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/id.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
